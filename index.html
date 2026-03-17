@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<title>Bestie Approval Simulator</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<canvas id="galaxy"></canvas>
+
+<div class="page active" id="start">
+
+<h1>🎮 Bestie Approval Simulator</h1>
+<p>Testing crazy gift ideas for my best friend...</p>
+
+<div class="meterBox">
+<div id="meter"></div>
+</div>
+
+<p>Bestie Approval Meter</p>
+
+<button onclick="startGame()">Start</button>
+
+</div>
+
+
+<div class="page" id="slot">
+
+<h2>🎰 Gift Generator</h2>
+
+<div class="slotMachine">
+<span id="slotGift">🎁</span>
+</div>
+
+<button onclick="spin()">Spin Gift</button>
+
+</div>
+
+
+<div class="page" id="decision">
+
+<h2 id="giftName"></h2>
+
+<button onclick="approve()">Approved 👍</button>
+<button onclick="reject()">Rejected ❌</button>
+
+</div>
+
+
+<div class="page" id="final">
+
+<div class="teddy">🧸</div>
+
+<h1>Teddy Approved!</h1>
+
+<p>
+Your birthday is coming soon 🎂  
+You say I shouldn't spend money on gifts…  
+but making you smile is worth it.
+</p>
+
+<button onclick="pandaReveal()">Reveal Real Gift</button>
+
+</div>
+
+
+<div class="page" id="panda">
+
+<h1 class="glow">🐼 Lightning Panda</h1>
+
+<p>The real surprise is this glowing Lightning Panda!</p>
+
+<canvas id="sparks"></canvas>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

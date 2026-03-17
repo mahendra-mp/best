@@ -1,0 +1,111 @@
+body{
+margin:0;
+height:100vh;
+font-family:Arial;
+background:black;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+overflow:hidden;
+}
+
+/* pages */
+
+.page{
+display:none;
+max-width:600px;
+z-index:2;
+}
+
+.active{
+display:block;
+}
+
+/* buttons */
+
+button{
+padding:12px 28px;
+margin:10px;
+border:none;
+border-radius:30px;
+background:#ff4d6d;
+color:white;
+cursor:pointer;
+}
+
+/* meter */
+
+.meterBox{
+width:300px;
+height:20px;
+background:#333;
+border-radius:20px;
+margin:20px auto;
+overflow:hidden;
+}
+
+#meter{
+width:0%;
+height:100%;
+background:#4CAF50;
+}
+
+/* galaxy */
+
+#galaxy{
+position:absolute;
+width:100%;
+height:100%;
+top:0;
+left:0;
+}
+
+/* slot machine */
+
+.slotMachine{
+font-size:60px;
+margin:20px;
+}
+
+/* gift box */
+
+.giftBox{
+font-size:80px;
+}
+
+/* teddy bounce */
+
+.teddy{
+font-size:80px;
+animation:bounce 1.5s infinite;
+}
+
+@keyframes bounce{
+0%,100%{transform:translateY(0)}
+50%{transform:translateY(-20px)}
+}
+
+/* panda glow */
+
+.glow{
+font-size:90px;
+animation:glow 1.5s infinite alternate;
+}
+
+@keyframes glow{
+from{text-shadow:0 0 10px #fff,0 0 20px #00f;}
+to{text-shadow:0 0 20px #fff,0 0 40px #0ff;}
+}
+
+/* sparks canvas */
+
+#sparks{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+pointer-events:none;
+}
